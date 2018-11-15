@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1534457011">
+  <File Type="ROUTE-PWR" Name="VGA_Shell_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="VGA_Shell.tcl"/>
+  <File Type="PWROPT-DCP" Name="VGA_Shell_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="VGA_Shell_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="VGA_Shell_reports.tcl"/>
+  <File Type="BG-DRC" Name="VGA_Shell.drc"/>
+  <File Type="OPT-HWDEF" Name="VGA_Shell.hwdef"/>
+  <File Type="OPT-DCP" Name="VGA_Shell_opt.dcp"/>
+  <File Type="OPT-DRC" Name="VGA_Shell_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="VGA_Shell_placed.dcp"/>
+  <File Type="PLACE-IO" Name="VGA_Shell_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="VGA_Shell_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="VGA_Shell_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="VGA_Shell_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="VGA_Shell_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="VGA_Shell_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="VGA_Shell_physopt.dcp"/>
+  <File Type="BG-BIT" Name="VGA_Shell.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="VGA_Shell_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="VGA_Shell_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="VGA_Shell_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="VGA_Shell_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="VGA_Shell_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="VGA_Shell_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="VGA_Shell.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="VGA_Shell_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="VGA_Shell.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="VGA_Shell_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="VGA_Shell.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="VGA_Shell_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="VGA_Shell.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="VGA_Shell_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="VGA_Shell_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="VGA_Shell_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="VGA_Shell_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="VGA_Shell_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="VGA_Shell_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="VGA_Shell_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="VGA_Shell.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="VGA_Shell_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="VGA_Shell_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="VGA_Shell.nky"/>
+  <File Type="BITSTR-BMM" Name="VGA_Shell_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="VGA_Shell.mmi"/>
+  <File Type="BITSTR-LTX" Name="VGA_Shell.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="VGA_Shell.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/VGA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/f002qp1/Downloads/vga_test_pattern.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VGA_Shell.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="VGA_Shell"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/f002qp1/Downloads/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1534456793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

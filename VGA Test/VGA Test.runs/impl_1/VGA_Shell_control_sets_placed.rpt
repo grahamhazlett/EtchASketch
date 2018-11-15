@@ -1,0 +1,64 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+| Date         : Thu Aug 16 18:05:11 2018
+| Host         : MECHA-2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file VGA_Shell_control_sets_placed.rpt
+| Design       : VGA_Shell
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     3 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              10 |            3 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              10 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------+------------------+------------------+------------------+----------------+
+|   Clock Signal  |   Enable Signal  | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------+------------------+------------------+------------------+----------------+
+|  mclk_IBUF_BUFG |                  |                  |                1 |              2 |
+|  sclk           |                  | display/clear    |                3 |             10 |
+|  sclk           | display/V_enable | display/y        |                2 |             10 |
++-----------------+------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 10     |                     2 |
++--------+-----------------------+
+
+

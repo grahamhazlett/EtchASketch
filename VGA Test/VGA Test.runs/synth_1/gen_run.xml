@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1534457010">
+  <File Type="PA-TCL" Name="VGA_Shell.tcl"/>
+  <File Type="REPORTS-TCL" Name="VGA_Shell_reports.tcl"/>
+  <File Type="RDS-RDS" Name="VGA_Shell.vds"/>
+  <File Type="RDS-UTIL" Name="VGA_Shell_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="VGA_Shell_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="VGA_Shell.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/VGA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/f002qp1/Downloads/vga_test_pattern.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VGA_Shell.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="VGA_Shell"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/f002qp1/Downloads/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1534456793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

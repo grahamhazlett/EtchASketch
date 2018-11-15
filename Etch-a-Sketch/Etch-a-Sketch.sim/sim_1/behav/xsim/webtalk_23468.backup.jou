@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Mon Aug 27 18:43:05 2018
+# Process ID: 23468
+# Current directory: P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.sim/sim_1/behav/xsim/xsim.dir/shell_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.sim/sim_1/behav/xsim/xsim.dir/shell_tb_behav/webtalk/xsim_webtalk.tcl -notrace

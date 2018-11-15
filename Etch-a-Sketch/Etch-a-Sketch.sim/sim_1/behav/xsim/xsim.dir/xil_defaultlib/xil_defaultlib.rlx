@@ -1,0 +1,14 @@
+0.6
+2017.3
+Oct 20 2017
+14:33:56
+P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sim_1/new/cursor_logic_tb.vhd,1535406265,vhdl,,,,cursor_logic_tb,,,,,,,,
+P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sim_1/new/debouncer_tb.vhd,1535424402,vhdl,,,,debouncer_tb,,,,,,,,
+P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sim_1/new/encoder_logic_tb.vhd,1534280707,vhdl,,,,encoder_logic_tb,,,,,,,,
+P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sim_1/new/shell_tb_2.vhd,1535409679,vhdl,,,,shell_tb,,,,,,,,
+P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/ip/Block_Ram/Block_Ram_sim_netlist.vhdl,1534905493,vhdl,,,,\Block_Ram_blk_mem_gen_mux__parameterized0\;\Block_Ram_blk_mem_gen_prim_width__parameterized0\;\Block_Ram_blk_mem_gen_prim_width__parameterized1\;\Block_Ram_blk_mem_gen_prim_width__parameterized2\;\Block_Ram_blk_mem_gen_prim_width__parameterized3\;\Block_Ram_blk_mem_gen_prim_wrapper__parameterized0\;\Block_Ram_blk_mem_gen_prim_wrapper__parameterized1\;\Block_Ram_blk_mem_gen_prim_wrapper__parameterized2\;\Block_Ram_blk_mem_gen_prim_wrapper__parameterized3\;block_ram;block_ram_bindec;block_ram_bindec_0;block_ram_blk_mem_gen_generic_cstr;block_ram_blk_mem_gen_prim_width;block_ram_blk_mem_gen_prim_wrapper;block_ram_blk_mem_gen_top;block_ram_blk_mem_gen_v8_4_0;block_ram_blk_mem_gen_v8_4_0_synth,,,,,,,,
+P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd,1535407921,vhdl,,,,cursor_logic,,,,,,,,
+P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd,1535436124,vhdl,,,,debouncer,,,,,,,,
+P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd,1535478619,vhdl,,,,encoder_logic,,,,,,,,
+P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd,1535474538,vhdl,,,,top_level_shell,,,,,,,,
+P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd,1534804553,vhdl,,,,vga,,,,,,,,

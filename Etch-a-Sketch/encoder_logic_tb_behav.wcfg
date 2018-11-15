@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="shell_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="shell_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="79"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/shell_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shell_tb/hor_a" type="logic">
+      <obj_property name="ElementShortName">hor_a</obj_property>
+      <obj_property name="ObjectShortName">hor_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shell_tb/hor_b" type="logic">
+      <obj_property name="ElementShortName">hor_b</obj_property>
+      <obj_property name="ObjectShortName">hor_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shell_tb/dut/Cursor_Update/hor_sig" type="logic">
+      <obj_property name="ElementShortName">hor_sig</obj_property>
+      <obj_property name="ObjectShortName">hor_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shell_tb/dut/Cursor_Update/hor_en" type="logic">
+      <obj_property name="ElementShortName">hor_en</obj_property>
+      <obj_property name="ObjectShortName">hor_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shell_tb/dut/Cursor_Update/cursor_out" type="array">
+      <obj_property name="ElementShortName">cursor_out[14:0]</obj_property>
+      <obj_property name="ObjectShortName">cursor_out[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shell_tb/vert_a" type="logic">
+      <obj_property name="ElementShortName">vert_a</obj_property>
+      <obj_property name="ObjectShortName">vert_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shell_tb/pixel_data" type="array">
+      <obj_property name="ElementShortName">pixel_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_data[11:0]</obj_property>
+   </wvobject>
+</wave_config>

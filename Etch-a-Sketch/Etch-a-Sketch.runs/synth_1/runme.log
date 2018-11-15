@@ -1,0 +1,1165 @@
+
+*** Running vivado
+    with args -log top_level_shell.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_shell.tcl
+
+
+****** Vivado v2017.3.1 (64-bit)
+  **** SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+  **** IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top_level_shell.tcl -notrace
+Command: synth_design -top top_level_shell -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12536 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 379.020 ; gain = 96.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level_shell' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:49]
+INFO: [Synth 8-113] binding component instance 'Slow_clock_buffer' to cell 'BUFG' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:152]
+WARNING: [Synth 8-614] signal 'pixel_x' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:171]
+WARNING: [Synth 8-614] signal 'pixel_y' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:171]
+WARNING: [Synth 8-614] signal 'cursor_s' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:171]
+WARNING: [Synth 8-614] signal 'video_on' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:197]
+WARNING: [Synth 8-614] signal 'background_color' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:197]
+INFO: [Synth 8-3491] module 'encoder_logic' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:34' bound to instance 'Hor_Encoder' of component 'encoder_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'encoder_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:43]
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'encoder_logic' (1#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:43]
+INFO: [Synth 8-3491] module 'encoder_logic' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:34' bound to instance 'Vert_Encoder' of component 'encoder_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:239]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Hor_A_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (2#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:44]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Hor_B_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:255]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Vert_A_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:262]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Vert_B_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:269]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Up_Down_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:276]
+INFO: [Synth 8-3491] module 'cursor_logic' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:27' bound to instance 'Cursor_Update' of component 'cursor_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:284]
+INFO: [Synth 8-638] synthesizing module 'cursor_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'cursor_logic' (3#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:36]
+INFO: [Synth 8-3491] module 'Block_Ram' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-11548-CADLAB-05/realtime/Block_Ram_stub.vhdl:5' bound to instance 'RAM' of component 'Block_Ram' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'Block_Ram' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-11548-CADLAB-05/realtime/Block_Ram_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'VGA' declared at 'P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:7' bound to instance 'display' of component 'VGA' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:309]
+INFO: [Synth 8-638] synthesizing module 'VGA' [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (4#1) [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'top_level_shell' (5#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 421.102 ; gain = 138.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 421.102 ; gain = 138.457
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-11548-CADLAB-05/dcp3/Block_Ram_in_context.xdc] for cell 'RAM'
+Finished Parsing XDC File [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-11548-CADLAB-05/dcp3/Block_Ram_in_context.xdc] for cell 'RAM'
+Parsing XDC File [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_shell_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_shell_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 728.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for RAM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'encoder_logic'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:110]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element ucursor_in_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:52]
+INFO: [Synth 8-5546] ROM "V_enable" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:40]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   ahigh |                              000 |                              000
+                 ahighcw |                              001 |                              010
+                ahighccw |                              010 |                              011
+                    alow |                              011 |                              001
+                 alowccw |                              100 |                              101
+                  alowcw |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'encoder_logic'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 5     
+	   2 Input     15 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_level_shell 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module encoder_logic 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module cursor_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 3     
++---Registers : 
+	               15 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "display/V_enable" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Hor_A_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element Hor_B_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element Vert_A_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element Vert_B_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element Up_Down_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element Cursor_Update/ucursor_in_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element display/x_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element display/y_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:40]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Block_Ram     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |Block_Ram_bbox_0 |     1|
+|2     |BUFG             |     2|
+|3     |CARRY4           |    64|
+|4     |LUT1             |    27|
+|5     |LUT2             |    47|
+|6     |LUT3             |    47|
+|7     |LUT4             |    49|
+|8     |LUT5             |    29|
+|9     |LUT6             |    69|
+|10    |FDRE             |   169|
+|11    |IBUF             |    13|
+|12    |OBUF             |    14|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   534|
+|2     |  Cursor_Update     |cursor_logic    |   149|
+|3     |  Hor_A_Debouncer   |debouncer       |    41|
+|4     |  Hor_B_Debouncer   |debouncer_0     |    41|
+|5     |  Hor_Encoder       |encoder_logic   |    10|
+|6     |  Up_Down_Debouncer |debouncer_1     |    41|
+|7     |  Vert_A_Debouncer  |debouncer_2     |    41|
+|8     |  Vert_B_Debouncer  |debouncer_3     |    41|
+|9     |  Vert_Encoder      |encoder_logic_4 |    34|
+|10    |  display           |VGA             |    96|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 728.383 ; gain = 445.738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 728.383 ; gain = 138.457
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 728.383 ; gain = 445.738
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 728.383 ; gain = 454.949
+INFO: [Common 17-1381] The checkpoint 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/top_level_shell.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_shell_utilization_synth.rpt -pb top_level_shell_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 728.383 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 27 23:50:03 2018...
+
+*** Running vivado
+    with args -log top_level_shell.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_shell.tcl
+
+
+****** Vivado v2017.3.1 (64-bit)
+  **** SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+  **** IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top_level_shell.tcl -notrace
+Command: synth_design -top top_level_shell -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13824 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 379.477 ; gain = 97.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level_shell' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:49]
+INFO: [Synth 8-113] binding component instance 'Slow_clock_buffer' to cell 'BUFG' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:153]
+WARNING: [Synth 8-614] signal 'pixel_x' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:172]
+WARNING: [Synth 8-614] signal 'pixel_y' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:172]
+WARNING: [Synth 8-614] signal 'cursor_s' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:172]
+WARNING: [Synth 8-614] signal 'mp_curr' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:184]
+WARNING: [Synth 8-614] signal 'mp_prev' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:184]
+WARNING: [Synth 8-614] signal 'video_on' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:210]
+WARNING: [Synth 8-614] signal 'background_color' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:210]
+INFO: [Synth 8-3491] module 'encoder_logic' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:34' bound to instance 'Hor_Encoder' of component 'encoder_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'encoder_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:43]
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'encoder_logic' (1#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:43]
+INFO: [Synth 8-3491] module 'encoder_logic' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:34' bound to instance 'Vert_Encoder' of component 'encoder_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:252]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Hor_A_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (2#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:44]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Hor_B_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:268]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Vert_A_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:275]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Vert_B_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:282]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Up_Down_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:289]
+INFO: [Synth 8-3491] module 'cursor_logic' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:27' bound to instance 'Cursor_Update' of component 'cursor_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'cursor_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'cursor_logic' (3#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:36]
+INFO: [Synth 8-3491] module 'Block_Ram' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-7044-CADLAB-05/realtime/Block_Ram_stub.vhdl:5' bound to instance 'RAM' of component 'Block_Ram' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:308]
+INFO: [Synth 8-638] synthesizing module 'Block_Ram' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-7044-CADLAB-05/realtime/Block_Ram_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'VGA' declared at 'P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:7' bound to instance 'display' of component 'VGA' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:322]
+INFO: [Synth 8-638] synthesizing module 'VGA' [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (4#1) [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'top_level_shell' (5#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 421.559 ; gain = 139.117
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 421.559 ; gain = 139.117
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-7044-CADLAB-05/dcp3/Block_Ram_in_context.xdc] for cell 'RAM'
+Finished Parsing XDC File [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-7044-CADLAB-05/dcp3/Block_Ram_in_context.xdc] for cell 'RAM'
+Parsing XDC File [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_shell_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_shell_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 727.641 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for RAM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'encoder_logic'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element ucursor_in_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:52]
+INFO: [Synth 8-5546] ROM "V_enable" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:40]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   ahigh |                              000 |                              000
+                 ahighcw |                              001 |                              010
+                ahighccw |                              010 |                              011
+                    alow |                              011 |                              001
+                 alowccw |                              100 |                              101
+                  alowcw |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'encoder_logic'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 5     
+	   2 Input     15 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_level_shell 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module encoder_logic 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module cursor_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 3     
++---Registers : 
+	               15 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "display/V_enable" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Hor_A_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Hor_B_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Vert_A_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Vert_B_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Up_Down_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Cursor_Update/ucursor_in_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element display/x_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element display/y_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:40]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Block_Ram     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |Block_Ram_bbox_0 |     1|
+|2     |BUFG             |     2|
+|3     |CARRY4           |    64|
+|4     |LUT1             |    26|
+|5     |LUT2             |    47|
+|6     |LUT3             |    48|
+|7     |LUT4             |    49|
+|8     |LUT5             |    29|
+|9     |LUT6             |    69|
+|10    |FDRE             |   171|
+|11    |IBUF             |    13|
+|12    |OBUF             |    14|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   536|
+|2     |  Cursor_Update     |cursor_logic    |   149|
+|3     |  Hor_A_Debouncer   |debouncer       |    41|
+|4     |  Hor_B_Debouncer   |debouncer_0     |    41|
+|5     |  Hor_Encoder       |encoder_logic   |    10|
+|6     |  Up_Down_Debouncer |debouncer_1     |    42|
+|7     |  Vert_A_Debouncer  |debouncer_2     |    41|
+|8     |  Vert_B_Debouncer  |debouncer_3     |    41|
+|9     |  Vert_Encoder      |encoder_logic_4 |    34|
+|10    |  display           |VGA             |    96|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 727.641 ; gain = 445.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 727.641 ; gain = 139.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 727.641 ; gain = 445.199
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 727.641 ; gain = 454.344
+INFO: [Common 17-1381] The checkpoint 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/top_level_shell.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_shell_utilization_synth.rpt -pb top_level_shell_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 727.641 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 28 13:41:05 2018...
+
+*** Running vivado
+    with args -log top_level_shell.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_shell.tcl
+
+
+****** Vivado v2017.3.1 (64-bit)
+  **** SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+  **** IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top_level_shell.tcl -notrace
+Command: synth_design -top top_level_shell -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8440 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 379.656 ; gain = 96.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level_shell' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:49]
+INFO: [Synth 8-113] binding component instance 'Slow_clock_buffer' to cell 'BUFG' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:153]
+WARNING: [Synth 8-614] signal 'pixel_x' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:172]
+WARNING: [Synth 8-614] signal 'pixel_y' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:172]
+WARNING: [Synth 8-614] signal 'cursor_s' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:172]
+WARNING: [Synth 8-614] signal 'mp_curr' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:184]
+WARNING: [Synth 8-614] signal 'mp_prev' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:184]
+WARNING: [Synth 8-614] signal 'video_on' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:210]
+WARNING: [Synth 8-614] signal 'background_color' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:210]
+INFO: [Synth 8-3491] module 'encoder_logic' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:34' bound to instance 'Hor_Encoder' of component 'encoder_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'encoder_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:43]
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'encoder_logic' (1#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:43]
+INFO: [Synth 8-3491] module 'encoder_logic' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/encoder_logic.vhd:34' bound to instance 'Vert_Encoder' of component 'encoder_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:252]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Hor_A_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (2#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:44]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Hor_B_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:268]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Vert_A_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:275]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Vert_B_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:282]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:36' bound to instance 'Up_Down_Debouncer' of component 'debouncer' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:289]
+INFO: [Synth 8-3491] module 'cursor_logic' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:27' bound to instance 'Cursor_Update' of component 'cursor_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'cursor_logic' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'cursor_logic' (3#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:36]
+INFO: [Synth 8-3491] module 'Block_Ram' declared at 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-9824-VLAB-029/realtime/Block_Ram_stub.vhdl:5' bound to instance 'RAM' of component 'Block_Ram' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:308]
+INFO: [Synth 8-638] synthesizing module 'Block_Ram' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-9824-VLAB-029/realtime/Block_Ram_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'VGA' declared at 'P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:7' bound to instance 'display' of component 'VGA' [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:322]
+INFO: [Synth 8-638] synthesizing module 'VGA' [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (4#1) [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'top_level_shell' (5#1) [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/top_level_shell.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 422.117 ; gain = 138.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 422.117 ; gain = 138.820
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-9824-VLAB-029/dcp3/Block_Ram_in_context.xdc] for cell 'RAM'
+Finished Parsing XDC File [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/.Xil/Vivado-9824-VLAB-029/dcp3/Block_Ram_in_context.xdc] for cell 'RAM'
+Parsing XDC File [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_shell_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_shell_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 727.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:03 ; elapsed = 00:01:16 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:03 ; elapsed = 00:01:16 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for RAM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:16 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'encoder_logic'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element ucursor_in_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:52]
+INFO: [Synth 8-5546] ROM "V_enable" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:40]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    alow |                              000 |                              001
+                 alowccw |                              001 |                              101
+                  alowcw |                              010 |                              100
+                   ahigh |                              011 |                              000
+                 ahighcw |                              100 |                              010
+                ahighccw |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'encoder_logic'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:04 ; elapsed = 00:01:17 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 5     
+	   2 Input     15 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_level_shell 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module encoder_logic 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module cursor_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 3     
++---Registers : 
+	               15 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "display/V_enable" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Hor_A_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Hor_B_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Vert_A_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Vert_B_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Up_Down_Debouncer/cycle_count_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/debouncer.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element Cursor_Update/ucursor_in_reg was removed.  [P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.srcs/sources_1/new/cursor_logic.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element display/x_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element display/y_reg was removed.  [P:/18summer/engs031/G19/VGA Test/VGA Test.srcs/sources_1/new/VGA.vhd:40]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:24 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:02:04 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:02:07 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:51 ; elapsed = 00:02:08 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:55 ; elapsed = 00:02:12 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:55 ; elapsed = 00:02:12 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:55 ; elapsed = 00:02:12 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:55 ; elapsed = 00:02:12 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:55 ; elapsed = 00:02:12 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:55 ; elapsed = 00:02:12 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Block_Ram     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |Block_Ram_bbox_0 |     1|
+|2     |BUFG             |     2|
+|3     |CARRY4           |    64|
+|4     |LUT1             |    26|
+|5     |LUT2             |    45|
+|6     |LUT3             |    49|
+|7     |LUT4             |    50|
+|8     |LUT5             |    37|
+|9     |LUT6             |    61|
+|10    |FDRE             |   171|
+|11    |IBUF             |    13|
+|12    |OBUF             |    14|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   536|
+|2     |  Cursor_Update     |cursor_logic    |   158|
+|3     |  Hor_A_Debouncer   |debouncer       |    41|
+|4     |  Hor_B_Debouncer   |debouncer_0     |    41|
+|5     |  Hor_Encoder       |encoder_logic   |    12|
+|6     |  Up_Down_Debouncer |debouncer_1     |    42|
+|7     |  Vert_A_Debouncer  |debouncer_2     |    41|
+|8     |  Vert_B_Debouncer  |debouncer_3     |    41|
+|9     |  Vert_Encoder      |encoder_logic_4 |    23|
+|10    |  display           |VGA             |    96|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:55 ; elapsed = 00:02:12 . Memory (MB): peak = 727.551 ; gain = 444.254
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:46 . Memory (MB): peak = 727.551 ; gain = 138.820
+Synthesis Optimization Complete : Time (s): cpu = 00:01:56 ; elapsed = 00:02:13 . Memory (MB): peak = 727.551 ; gain = 444.254
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:00 ; elapsed = 00:02:20 . Memory (MB): peak = 727.551 ; gain = 451.773
+INFO: [Common 17-1381] The checkpoint 'P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/synth_1/top_level_shell.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_shell_utilization_synth.rpt -pb top_level_shell_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.115 . Memory (MB): peak = 727.551 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 28 13:57:52 2018...

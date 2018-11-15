@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Tue Aug 28 13:58:12 2018
+# Process ID: 9336
+# Current directory: P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/impl_1
+# Command line: vivado.exe -log top_level_shell.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_level_shell.tcl -notrace
+# Log file: P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/impl_1/top_level_shell.vdi
+# Journal file: P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_level_shell.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Tue Aug 21 22:35:56 2018
+# Process ID: 8656
+# Current directory: P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/Block_Ram_synth_1
+# Command line: vivado.exe -log Block_Ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_Ram.tcl
+# Log file: P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/Block_Ram_synth_1/Block_Ram.vds
+# Journal file: P:/18summer/engs031/G19/Etch-a-Sketch/Etch-a-Sketch.runs/Block_Ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Block_Ram.tcl -notrace

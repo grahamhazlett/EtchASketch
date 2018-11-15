@@ -1,0 +1,42 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+| Date         : Tue Aug 28 14:00:30 2018
+| Host         : VLAB-029 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -file top_level_shell_control_sets_placed.rpt
+| Design       : top_level_shell
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+
+1. Summary
+----------
+
++-------------------------------+-------+
+|             Status            | Count |
++-------------------------------+-------+
+| Number of unique control sets |     9 |
++-------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              42 |           22 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              10 |            4 |
+| Yes          | No                    | No                     |              15 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             110 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+

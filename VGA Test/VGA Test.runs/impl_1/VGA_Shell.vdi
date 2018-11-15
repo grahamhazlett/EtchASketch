@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Fri Aug 17 14:42:25 2018
+# Process ID: 5428
+# Current directory: P:/18summer/engs031/G19/VGA Test/VGA Test.runs/impl_1
+# Command line: vivado.exe -log VGA_Shell.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source VGA_Shell.tcl -notrace
+# Log file: P:/18summer/engs031/G19/VGA Test/VGA Test.runs/impl_1/VGA_Shell.vdi
+# Journal file: P:/18summer/engs031/G19/VGA Test/VGA Test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source VGA_Shell.tcl -notrace
+Command: open_checkpoint VGA_Shell_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 237.750 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [P:/18summer/engs031/G19/VGA Test/VGA Test.runs/impl_1/.Xil/Vivado-5428-MECHA-2/dcp3/VGA_Shell.xdc]
+Finished Parsing XDC File [P:/18summer/engs031/G19/VGA Test/VGA Test.runs/impl_1/.Xil/Vivado-5428-MECHA-2/dcp3/VGA_Shell.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 535.938 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 535.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.3.1 (64-bit) build 2035080
+open_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 540.008 ; gain = 302.258
+Command: write_bitstream -force VGA_Shell.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 15492128 bits.
+Writing bitstream ./VGA_Shell.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+15 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 905.465 ; gain = 365.457
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 17 14:42:56 2018...

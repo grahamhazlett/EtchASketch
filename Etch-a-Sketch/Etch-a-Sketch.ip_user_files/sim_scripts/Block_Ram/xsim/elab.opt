@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot Block_Ram xil_defaultlib.Block_Ram -log elaborate.log

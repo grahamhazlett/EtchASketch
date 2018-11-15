@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Thu Aug 16 16:41:59 2018
+# Process ID: 7424
+# Current directory: P:/18summer/engs031/G19/VGA Test/VGA Test.runs/impl_1
+# Command line: vivado.exe -log VGA_Shell.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source VGA_Shell.tcl -notrace
+# Log file: P:/18summer/engs031/G19/VGA Test/VGA Test.runs/impl_1/VGA_Shell.vdi
+# Journal file: P:/18summer/engs031/G19/VGA Test/VGA Test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source VGA_Shell.tcl -notrace
