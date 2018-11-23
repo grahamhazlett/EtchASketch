@@ -2,7 +2,7 @@
 
 This digital Etch-A-Sketch project was implemented using VHDL, uploaded to a FPGA board. The project takes input from two rotary encoders, and displays the output to a monitor via VGA output. The functionality, design process, high level logic, and code are documented.
 
-![](documentation/Func.jpg)
+![](documentation/Func.png)
 
 Detailed documentation of the functionality and design of the project can be found in the [Final Project Report](Final%20Project%20Report.pdf), and in the supporting [Final Project Report Appendix](Final%20Project%20Report%20Appendix.pdf).
 
